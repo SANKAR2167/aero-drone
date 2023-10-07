@@ -1,0 +1,66 @@
+/* Base styles for larger screens */
+.service-page {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.service-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-text {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+}
+
+.service-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.s-sec-1{
+    background-color: #f9bebe;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .service-page {
+        flex-direction: column;
+    }
+
+    .service-content,
+    .service-image {
+        flex: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .service-content {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .service-heading {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .service-text {
+        font-size: 14px;
+    }
+}
